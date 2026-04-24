@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wibix Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1 class="logo">WIBIX OFFICIAL</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Capturing Moments</h2>
+        <p>Elegant • Artistic • Storytelling</p>
+        <a href="#instagram" class="btn">Explore My World</a>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section fade-up">
+    <h2>Portfolio</h2>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/400?1" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/400?2" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/400?3" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/400?4" onclick="openLightbox(this)">
+    </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram" class="section fade-up">
+    <h2>My Instagram</h2>
+
+    <div class="ig-container">
+
+        <a href="https://instagram.com/wibix_official" target="_blank" class="ig-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="ig-icon">
+            <h3>@wibix_official</h3>
+            <p>Main Photography</p>
+        </a>
+
+        <a href="https://instagram.com/bidikanrasa.jpg" target="_blank" class="ig-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="ig-icon">
+            <h3>@bidikanrasa.jpg</h3>
+            <p>Art & Mood</p>
+        </a>
+
+        <a href="https://instagram.com/quotes_bix" target="_blank" class="ig-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="ig-icon">
+            <h3>@quotes_bix</h3>
+            <p>Quotes & Story</p>
+        </a>
+
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Wibix Portfolio</p>
+</footer>
+
+<script src="animasi.js"></script>
+
+</body>
+</html>
